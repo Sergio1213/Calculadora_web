@@ -1,12 +1,11 @@
-# Función para realizar la suma de dos números
 def suma(num1, num2):
     return num1 + num2
 
-# Función para realizar la resta de dos números
+# resta de dos números
 def resta(num1, num2):
     return num1 - num2
 
-# Función para realizar la multiplicación de dos números
+# Multiplicación de dos números
 def multiplicacion(num1, num2):
     return num1 * num2
 
@@ -16,13 +15,11 @@ def division(num1, num2):
         return "Error: No se puede dividir por cero"
     return num1 / num2
 
-# Función principal de la calculadora
 def calculadora():
     print("Calculadora Simple")
     try:
-        num1 = float(input("Ingrese el primer número: "))
-        num2 = float(input("Ingrese el segundo número: "))
-        print("Operaciones disponibles:")
+        num1 = float(input("Ingresa el numero 1: "))
+        num2 = float(input("Ingresa el numero 2: "))
         print("1. Suma")
         print("2. Resta")
         print("3. Multiplicación")
@@ -34,14 +31,18 @@ def calculadora():
         else:
             if operacion == "1":
                 resultado = suma(num1, num2)
+                signo = "+"
             elif operacion == "2":
                 resultado = resta(num1, num2)
+                signo = "-"
             elif operacion == "3":
                 resultado = multiplicacion(num1, num2)
+                signo = "*"
             else:
                 resultado = division(num1, num2)
+                signo = "/"
             
-            print("Resultado: ", resultado)
+            print(f"Resultado: {num1} {signo} {num2} = {resultado}")
     except ValueError:
         print("Error: Ingrese números válidos")
 
