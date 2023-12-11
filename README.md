@@ -6,7 +6,6 @@ Este documento ofrece instrucciones detalladas sobre la instalación y el uso de
 
 La calculadora básica no requiere una instalación compleja. Solo es necesario tener Python configurado en tu sistema. Asegúrate de contar con el sistema de contenedores Docker y la herramienta de visualización de código Visual Studio.
 
-[Ir a la sección **Código**](#código)
 
 Puedes verificar si tienes Python instalado ejecutando este comando en tu terminal:
 ```bash
